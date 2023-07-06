@@ -33,7 +33,7 @@ public class Hogwarts {
 
     public void setMagicPower(int magicPower) {
         if (magicPower < 0 && magicPower > 100) {
-            System.out.println("Такой силы магии не бывает");
+            System.out.println(" Такой силы магии не бывает");
             return;
         }
         this.magicPower = magicPower;

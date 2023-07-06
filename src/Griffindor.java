@@ -31,7 +31,7 @@ public class Griffindor extends Hogwarts {
     }
 
     public void setBravery(int bravery) {
-        this.bravery = bravery;
+        this.bravery =  bravery;
     }
 
     @Override
