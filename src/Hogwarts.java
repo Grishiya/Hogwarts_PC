@@ -20,11 +20,10 @@ public class Hogwarts {
         return surname;
     }
 
-    public int getMagicPower(int magicPower)
-    {
-        if (magicPower<0 && magicPower>100){
+    public int getMagicPower(int magicPower) {
+        if (magicPower < 0 && magicPower > 100) {
             System.out.println("Такой силы магии не бывает");
-            }
+        }
         return magicPower;
     }
 
@@ -33,7 +32,7 @@ public class Hogwarts {
     }
 
     public void setMagicPower(int magicPower) {
-        if (magicPower<0 && magicPower>100){
+        if (magicPower < 0 && magicPower > 100) {
             System.out.println("Такой силы магии не бывает");
             return;
         }
@@ -41,7 +40,7 @@ public class Hogwarts {
     }
 
     public void setSkillRange(int skillRange) {
-        if (skillRange<0 && skillRange>100){
+        if (skillRange < 0 && skillRange > 100) {
             System.out.println("Невозможная дальность умений");
             return;
         }
