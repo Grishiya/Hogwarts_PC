@@ -8,6 +8,7 @@ public class Hogwarts {
         this.name = name;
         this.surname = surname;
         this.magicPower = magicPower;
+
         this.skillRange = skillRange;
     }
 
@@ -19,7 +20,11 @@ public class Hogwarts {
         return surname;
     }
 
-    public int getMagicPower() {
+    public int getMagicPower(int magicPower)
+    {
+        if (magicPower<0 && magicPower>100){
+            System.out.println("Такой силы магии не бывает");
+            }
         return magicPower;
     }
 
@@ -43,4 +48,13 @@ public class Hogwarts {
         this.skillRange = skillRange;
     }
 
+    @Override
+    public String toString() {
+        return "Hogwarts{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", magicPower=" + magicPower +
+                ", skillRange=" + skillRange +
+                '}';
+    }
 }
