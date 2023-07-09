@@ -1,14 +1,18 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-
-        Hogwarts[] teachers = {
-                new Hogwarts("Гарри", "Поттер", 101, 50)
+        Griffindor [] griffindors={
+                new Griffindor("Гарри","Поттер",80,60,100,100,
+                        100),
+                new Griffindor("Рон","Уизли",45,25,65,
+                        90,80),
+                new Griffindor("Гермиона","Грейнджер",75,92,76,
+                        80,80)
         };
-        System.out.println(teachers[0].toString());
-    Puffenduy[] teachersPuf={
-            new Puffenduy("Седриг","Диггори",65,30,73,43,65)
-    };
+        for (int i = 0; i < griffindors.length; i++) {
+            Griffindor griffindor=griffindors[i];
+            System.out.println(griffindor);
+        }
     }
 
 }

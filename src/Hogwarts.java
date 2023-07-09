@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private String surname;
     private int magicPower;
@@ -20,10 +20,7 @@ public class Hogwarts {
         return surname;
     }
 
-    public int getMagicPower(int magicPower) {
-        if (magicPower < 0 && magicPower > 100) {
-            System.out.println("Такой силы магии не бывает");
-        }
+    public int getMagicPower() {
         return magicPower;
     }
 
@@ -49,11 +46,12 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "Hogwarts{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", magicPower=" + magicPower +
-                ", skillRange=" + skillRange +
-                '}';
+        return "Студент школы волшебства Хогвартс. "
+                +name+" "
+                + surname
+                +". Владеет магией на "
+                +magicPower + " баллов. "
+                +" дальность умений "
+                +skillRange + " м.";
     }
 }

@@ -3,7 +3,8 @@ public class Griffindor extends Hogwarts {
     private int honor;
     private int bravery;
 
-    public Griffindor(String name, String surname, int magicPower, int skillRange, int nobility, int honor, int bravery) {
+    public Griffindor(String name, String surname, int magicPower, int skillRange,
+                      int nobility, int honor, int bravery) {
         super(name, surname, magicPower, skillRange);
         this.nobility = nobility;
         this.honor = honor;
@@ -36,11 +37,10 @@ public class Griffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Griffindor{" +
-                "nobility=" + nobility +
-                ", honor=" + honor +
-                ", bravery=" + bravery +
-                '}';
+        return super.toString() +". Благородство - "
+                +nobility+". Честь - "+ honor
+                + ". Отвага - "+ bravery;
     }
 }
+
 
