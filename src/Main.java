@@ -23,7 +23,7 @@ public class Main {
                         80),
                 new Puffenduy("Седриг", "Диггори", 76, 54, 67,
                         87, 65),
-                new Puffenduy("Джастин", "Финя-Флетли", 32, 12, 65,
+                new Puffenduy("Джастин", "Финч-Флетчли", 32, 12, 65,
                         56, 65)
         };
         Kogtevran[] kogtevranStudent = {

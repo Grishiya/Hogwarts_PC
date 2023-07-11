@@ -5,7 +5,11 @@ public class PrintStudent {
         for (int i = 0; i < student.length; i++) {
             Griffindor griffindor = student[i];
             System.out.println(griffindor);
+
         }
+        System.out.print( "Лучший Гриффиндорец: ");
+        student[0].compareTo(student);
+
     }
 
     public void printSlizerinStudent(Slizerin[] student) {
