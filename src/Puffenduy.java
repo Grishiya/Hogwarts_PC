@@ -33,4 +33,12 @@ public class Puffenduy extends Hogwarts{
  public void setFealty(int fealty) {
   this.fealty = fealty;
  }
+ @Override
+ public String toString (){
+  return super.toString()+
+          "Трудолюбие = "+industriousness+
+          ", верность = "+honesty+
+          ", честность = "+fealty+
+          " .";
+ }
 }

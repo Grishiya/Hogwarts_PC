@@ -43,4 +43,11 @@ public class Kogtevran extends Hogwarts{
     public void setCreativity(int creativity) {
         this.creativity = creativity;
     }
+    @Override
+    public String toString(){
+        return super.toString()+
+                "Ум = "+mind+
+                ", мудрость = "+
+                ", креативность";
+    }
 }

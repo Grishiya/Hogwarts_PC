@@ -52,6 +52,6 @@ public abstract class Hogwarts {
                 +". Владеет магией на "
                 +magicPower + " баллов. "
                 +" дальность умений "
-                +skillRange + " м.";
+                +skillRange + " метров. ";
     }
 }
