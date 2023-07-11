@@ -1,8 +1,8 @@
-public class Kogtevran extends Hogwarts{
-  private   int mind;
-   private int wisdom;
-   private int wit;
-   private int creativity;
+public class Kogtevran extends Hogwarts {
+    private int mind;
+    private int wisdom;
+    private int wit;
+    private int creativity;
 
     public Kogtevran(String name, String surname, int magicPower, int skillRange, int mind, int wisdom, int wit, int creativity) {
         super(name, surname, magicPower, skillRange);
@@ -43,11 +43,12 @@ public class Kogtevran extends Hogwarts{
     public void setCreativity(int creativity) {
         this.creativity = creativity;
     }
+
     @Override
-    public String toString(){
-        return super.toString()+
-                "Ум = "+mind+
-                ", мудрость = "+
-                ", креативность";
+    public String toString() {
+        return super.toString() +
+                "Ум = " + mind +
+                ", мудрость = " + mind +
+                ", креативность = " + creativity + " .";
     }
 }

@@ -46,7 +46,7 @@ public abstract class Hogwarts {
 
     @Override
     public String toString() {
-        return "Студент школы волшебства Хогвартс. "
+        return "Ученик школы волшебства Хогвартс. "
                 +name+" "
                 + surname
                 +". Владеет магией на "

@@ -55,13 +55,14 @@ public class Slizerin extends Hogwarts {
     public void setDomination(int domination) {
         this.domination = domination;
     }
+
     @Override
-    public String toString(){
-        return super.toString()+
-                "Хитрость = "+ cunning+
-                ", решитильность = "+ determination+
-                ", амбициозность = "+ambition+
-                ", находчивость = "+resoursefulness+
-                ", жажда власти = "+domination+" .";
+    public String toString() {
+        return super.toString() +
+                "Хитрость = " + cunning +
+                ", решитильность = " + determination +
+                ", амбициозность = " + ambition +
+                ", находчивость = " + resoursefulness +
+                ", жажда власти = " + domination + " .";
     }
 }
