@@ -17,13 +17,14 @@ public class Kogtevran extends Hogwarts {
     public String toString() {
         return super.toString() +
                 "Ум = " + mind +
-                ", мудрость = " + wit +
+                ", мудрость = " + wisdom +
+                ", остроумие" + wit +
                 ", креативность = " + creativity + " .";
     }
 
     public void compareTo(Kogtevran other) {
         int thisCount = this.mind + this.creativity + this.wit;
         int otherCount = other.mind + other.wit + other.creativity;
-        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Когтевранец");
+        super.compareStudent(thisCount, otherCount, this.getName(), other.getName(), "Когтевранец");
     }
 }

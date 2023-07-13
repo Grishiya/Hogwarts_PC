@@ -1,4 +1,4 @@
-public class Griffindor extends Hogwarts{
+public class Griffindor extends Hogwarts {
     private final int nobility;
     private final int honor;
     private final int bravery;
@@ -12,7 +12,6 @@ public class Griffindor extends Hogwarts{
     }
 
 
-
     @Override
     public String toString() {
         return super.toString() + ". Благородство - "
@@ -23,7 +22,7 @@ public class Griffindor extends Hogwarts{
     public void compareTo(Griffindor other) {
         int thisCount = this.bravery + this.honor + this.nobility;
         int otherCount = other.bravery + other.honor + other.nobility;
-        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Гриффиндорец");
+        super.compareStudent(thisCount, otherCount, this.getName(), other.getName(), "Гриффиндорец");
 
     }
 

@@ -17,7 +17,6 @@ public class Slizerin extends Hogwarts {
     }
 
 
-
     @Override
     public String toString() {
         return super.toString() +
