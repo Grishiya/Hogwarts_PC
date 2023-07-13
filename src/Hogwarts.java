@@ -16,33 +16,6 @@ public abstract class Hogwarts {
         return name;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public int getMagicPower() {
-        return magicPower;
-    }
-
-    public int getSkillRange() {
-        return skillRange;
-    }
-
-    public void setMagicPower(int magicPower) {
-        if (magicPower < 0 && magicPower > 100) {
-            System.out.println(" Такой силы магии не бывает");
-            return;
-        }
-        this.magicPower = magicPower;
-    }
-
-    public void setSkillRange(int skillRange) {
-        if (skillRange < 0 && skillRange > 100) {
-            System.out.println("Невозможная дальность умений");
-            return;
-        }
-        this.skillRange = skillRange;
-    }
 
     @Override
     public String toString() {
@@ -57,21 +30,21 @@ public abstract class Hogwarts {
     public void compareTo(Hogwarts other){
         int thisCount = this.magicPower + this.skillRange;
         int otherCount = other.magicPower + other.skillRange;
-        printComparingResult(this.name, other.name, "маг в Хогварсе");
 
+compareStudent(thisCount,otherCount,this.name,other.name," владеет магией");
     }
 
 
 
     private void printComparingResult(String bestStudent, String worseStudent,String parametr) {
         System.out.println(bestStudent +
-                " лучшe "+ parametr+ " чем " + worseStudent);
+                " лучше "+ parametr+ " чем " + worseStudent);
     }
-    public void compareStudent(int countThis,int countOther,String thisName,String other, String parametr){
+    public void compareStudent(int countThis,int countOther,String thisName,String other, String parameter){
         if (countThis>countOther){
-            printComparingResult(thisName,other,parametr);
+            printComparingResult(thisName,other,parameter);
         } else if (countThis < countOther) {
-            printComparingResult(other,thisName,parametr);
+            printComparingResult(other,thisName,parameter);
         }else {
             System.out.println("Студенты одинаково сильны ");
         }

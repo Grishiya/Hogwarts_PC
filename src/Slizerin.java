@@ -1,9 +1,9 @@
 public class Slizerin extends Hogwarts {
-    private int cunning;
-    private int determination;
-    private int ambition;
-    private int resoursefulness;
-    private int domination;
+    private final int cunning;
+    private final int determination;
+    private final int ambition;
+    private final int resoursefulness;
+    private final int domination;
 
     public Slizerin(String name, String surname, int magicPower,
                     int skillRange, int cunning, int determination,
@@ -16,45 +16,7 @@ public class Slizerin extends Hogwarts {
         this.domination = domination;
     }
 
-    public int getCunning() {
-        return cunning;
-    }
 
-    public void setCunning(int cunning) {
-        this.cunning = cunning;
-    }
-
-    public int getDetermination() {
-        return determination;
-    }
-
-    public void setDetermination(int determination) {
-        this.determination = determination;
-    }
-
-    public int getAmbition() {
-        return ambition;
-    }
-
-    public void setAmbition(int ambition) {
-        this.ambition = ambition;
-    }
-
-    public int getResoursefulness() {
-        return resoursefulness;
-    }
-
-    public void setResoursefulness(int resoursefulness) {
-        this.resoursefulness = resoursefulness;
-    }
-
-    public int getDomination() {
-        return domination;
-    }
-
-    public void setDomination(int domination) {
-        this.domination = domination;
-    }
 
     @Override
     public String toString() {
@@ -65,13 +27,10 @@ public class Slizerin extends Hogwarts {
                 ", находчивость = " + resoursefulness +
                 ", жажда власти = " + domination + " .";
     }
+
     public void compareTo(Slizerin other) {
-        int thisCount = this.cunning + this.determination + this.domination+this.resoursefulness+this.ambition;
-        int otherCount = other.cunning + other.determination + other.domination+other.resoursefulness+other.ambition;
-        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Слизеринец");
-    }
-    private void printComparingResult(Slizerin bestStudent, Slizerin worseStudent){
-        System.out.println(bestStudent.getName()+" "+bestStudent.getSurname()+
-                " лучшe  чем "+ worseStudent.getName()+ " "+worseStudent.getSurname());
+        int thisCount = this.cunning + this.determination + this.domination + this.resoursefulness + this.ambition;
+        int otherCount = other.cunning + other.determination + other.domination + other.resoursefulness + other.ambition;
+        super.compareStudent(thisCount, otherCount, this.getName(), other.getName(), "Слизеринец");
     }
 }

@@ -1,7 +1,7 @@
 public class Griffindor extends Hogwarts{
-    private int nobility;
-    private int honor;
-    private int bravery;
+    private final int nobility;
+    private final int honor;
+    private final int bravery;
 
     public Griffindor(String name, String surname, int magicPower, int skillRange,
                       int nobility, int honor, int bravery) {
@@ -11,29 +11,7 @@ public class Griffindor extends Hogwarts{
         this.bravery = bravery;
     }
 
-    public int getNobility() {
-        return nobility;
-    }
 
-    public void setNobility(int nobility) {
-        this.nobility = nobility;
-    }
-
-    public int getHonor() {
-        return honor;
-    }
-
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
-
-    public int getBravery() {
-        return bravery;
-    }
-
-    public void setBravery(int bravery) {
-        this.bravery = bravery;
-    }
 
     @Override
     public String toString() {
@@ -49,8 +27,5 @@ public class Griffindor extends Hogwarts{
 
     }
 
-    private void printComparingResult(Griffindor bestStudent, Griffindor worseStudent) {
-        System.out.println(bestStudent.getName() + " " + bestStudent.getSurname() +
-                " лучшe  чем " + worseStudent.getName() + " "+worseStudent.getSurname());
-    }
+
 }
