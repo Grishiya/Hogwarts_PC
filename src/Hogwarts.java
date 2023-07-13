@@ -25,7 +25,7 @@ public abstract class Hogwarts {
                 + ". Владеет магией на "
                 + magicPower + " баллов. "
                 + " дальность умений "
-                + skillRange + " метров. ";
+                + skillRange  + " метров. ";
      }
 
     public void compareTo(Hogwarts other) {
