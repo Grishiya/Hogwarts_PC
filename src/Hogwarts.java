@@ -26,7 +26,7 @@ public abstract class Hogwarts {
                 + magicPower + " баллов. "
                 + " дальность умений "
                 + skillRange + " метров. ";
-    }
+     }
 
     public void compareTo(Hogwarts other) {
         int thisCount = this.magicPower + this.skillRange;
