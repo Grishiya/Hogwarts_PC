@@ -19,7 +19,7 @@ public class Griffindor extends Hogwarts {
                 + ". Отвага - " + bravery;
     }
 
-    public void compareTo(Griffindor other) {
+    public  void compareTo(Griffindor other) {
         int thisCount = this.bravery + this.honor + this.nobility;
         int otherCount = other.bravery + other.honor + other.nobility;
         super.compareStudent(thisCount, otherCount, this.getName(), other.getName(), "Гриффиндорец");
