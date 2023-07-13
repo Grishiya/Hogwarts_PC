@@ -8,7 +8,7 @@ public class Griffindor extends Hogwarts {
         super(name, surname, magicPower, skillRange);
         this.nobility = nobility;
         this.honor = honor;
-        this.bravery =  bravery ;
+        this.bravery  =  bravery ;
     }
 
 
