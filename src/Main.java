@@ -71,8 +71,5 @@ public class Main {
         harry.compareTo(drako);
         drako.compareTo(ron);
 
-     }
-
-        System.out.println("Hello world!");
     }
 }

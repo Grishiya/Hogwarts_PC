@@ -5,7 +5,7 @@ public abstract class Hogwarts {
     private final int skillRange;
 
     public Hogwarts(String name, String surname, int magicPower, int skillRange) {
-        this.name =  name;
+        this.name = name;
         this.surname = surname;
         this.magicPower = magicPower;
 
@@ -25,8 +25,8 @@ public abstract class Hogwarts {
                 + ". Владеет магией на "
                 + magicPower + " баллов. "
                 + " дальность умений "
-                + skillRange  + " метров. ";
-     }
+                + skillRange + " метров. ";
+    }
 
     public void compareTo(Hogwarts other) {
         int thisCount = this.magicPower + this.skillRange;
@@ -37,7 +37,7 @@ public abstract class Hogwarts {
 
 
     private void printComparingResult(String bestStudent, String worseStudent, String parametr) {
-        System.out.println(bestStudent  +
+        System.out.println(bestStudent +
                 " лучше " + parametr + " чем " + worseStudent);
     }
 
