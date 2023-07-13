@@ -21,7 +21,7 @@ public abstract class Hogwarts {
     public String toString() {
         return "Ученик школы   волшебства Хогвартс. "
                 + name + " "
-                + surname + " "
+                + surname  + " "
                 + ". Владеет магией на "
                 + magicPower + " баллов. "
                 + " дальность умений "
