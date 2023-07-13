@@ -13,7 +13,7 @@ public class Griffindor extends Hogwarts {
 
 
     @Override
-    public String toString() {
+    public  String toString() {
         return super.toString() + ". Благородство - "
                 + nobility + ". Честь - " + honor
                 + ". Отвага - " + bravery;
