@@ -37,7 +37,7 @@ public abstract class Hogwarts {
 
 
     private void printComparingResult(String bestStudent, String worseStudent, String parametr) {
-        System.out.println(bestStudent +
+        System.out.println(bestStudent  +
                 " лучше " + parametr + " чем " + worseStudent);
     }
 

@@ -19,7 +19,7 @@ public class Main {
                 32, 24, 26,
                 23, 15);
 
-        Slizerin gregori = new Slizerin("Грегори", "Гойл", 32, 32,
+        Slizerin gregori = new Slizerin("Грегори ", "Гойл", 32, 32,
                 45, 32,
                 76, 54, 43);
         Puffenduy zahariya = new Puffenduy("Захария", "Смит", 12, 4,

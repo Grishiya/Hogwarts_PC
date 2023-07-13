@@ -9,7 +9,7 @@ public class Kogtevran extends Hogwarts {
         this.mind = mind;
         this.wisdom = wisdom;
         this.wit = wit;
-        this.creativity = creativity;
+        this.creativity = creativity ;
     }
 
 

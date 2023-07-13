@@ -7,7 +7,7 @@ public class Puffenduy extends Hogwarts {
         super(name, surname, magicPower, skillRange);
         this.industriousness = industriousness;
         this.honesty = honesty;
-        this.fealty = fealty;
+        this.fealty = fealty ;
     }
 
 
