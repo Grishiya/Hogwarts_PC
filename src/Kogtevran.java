@@ -48,7 +48,17 @@ public class Kogtevran extends Hogwarts {
     public String toString() {
         return super.toString() +
                 "Ум = " + mind +
-                ", мудрость = " + mind +
+                ", мудрость = " + wit +
                 ", креативность = " + creativity + " .";
+    }
+
+    public void compareTo(Kogtevran other) {
+        int thisCount = this.mind + this.creativity + this.wit;
+        int otherCount = other.mind + other.wit + other.creativity;
+        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Когтевранец");
+    }
+    private void printComparingResult(Kogtevran bestStudent, Kogtevran worseStudent){
+        System.out.println(bestStudent.getName()+" "+bestStudent.getSurname()+
+                " лучшe  чем "+ worseStudent.getName()+ " "+worseStudent.getSurname());
     }
 }

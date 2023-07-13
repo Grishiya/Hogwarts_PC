@@ -65,4 +65,13 @@ public class Slizerin extends Hogwarts {
                 ", находчивость = " + resoursefulness +
                 ", жажда власти = " + domination + " .";
     }
+    public void compareTo(Slizerin other) {
+        int thisCount = this.cunning + this.determination + this.domination+this.resoursefulness+this.ambition;
+        int otherCount = other.cunning + other.determination + other.domination+other.resoursefulness+other.ambition;
+        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Слизеринец");
+    }
+    private void printComparingResult(Slizerin bestStudent, Slizerin worseStudent){
+        System.out.println(bestStudent.getName()+" "+bestStudent.getSurname()+
+                " лучшe  чем "+ worseStudent.getName()+ " "+worseStudent.getSurname());
+    }
 }

@@ -42,4 +42,15 @@ public class Puffenduy extends Hogwarts {
                 ", честность = " + fealty +
                 " .";
     }
+    public void compareTo(Puffenduy other) {
+        int thisCount = this.industriousness + this.honesty + this.fealty;
+        int otherCount = other.industriousness + other.honesty + other.fealty;
+        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Пуффендуец");
+    }
+
+
+    private void printComparingResult(Puffenduy bestStudent, Puffenduy worseStudent){
+        System.out.println(bestStudent.getName()+" "+bestStudent.getSurname()+
+                " лучшe  чем "+ worseStudent.getName()+ " "+worseStudent.getSurname());
+    }
 }

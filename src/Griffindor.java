@@ -1,4 +1,4 @@
-public class Griffindor extends Hogwarts {
+public class Griffindor extends Hogwarts{
     private int nobility;
     private int honor;
     private int bravery;
@@ -42,26 +42,15 @@ public class Griffindor extends Hogwarts {
                 + ". Отвага - " + bravery;
     }
 
-    public String compareTo(Griffindor[] other) {
-        String bestStudent;
+    public void compareTo(Griffindor other) {
         int thisCount = this.bravery + this.honor + this.nobility;
-        for (int i = 1; i < other.length; i++) {
+        int otherCount = other.bravery + other.honor + other.nobility;
+        super.compareStudent(thisCount,otherCount,this.getName(),other.getName(),"Гриффиндорец");
 
+    }
 
-            int otherCount = other[i].bravery + other[i].honor + other[i].nobility;
-            if (thisCount > otherCount) {
-                bestStudent = thisCount;
-                return this.getName() + " " + this.getSurname() + bestStudent;
-            } else {
-                bestStudent = otherCount;
-                return other[i].getName() + " " + other[i].getSurname() + bestStudent;
-
-
-            }
-
-
-        }
+    private void printComparingResult(Griffindor bestStudent, Griffindor worseStudent) {
+        System.out.println(bestStudent.getName() + " " + bestStudent.getSurname() +
+                " лучшe  чем " + worseStudent.getName() + " "+worseStudent.getSurname());
     }
 }
-
-

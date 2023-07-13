@@ -48,10 +48,33 @@ public abstract class Hogwarts {
     public String toString() {
         return "Ученик школы волшебства Хогвартс. "
                 +name+" "
-                + surname
+                + surname+" "
                 +". Владеет магией на "
                 +magicPower + " баллов. "
                 +" дальность умений "
                 +skillRange + " метров. ";
     }
+    public void compareTo(Hogwarts other){
+        int thisCount = this.magicPower + this.skillRange;
+        int otherCount = other.magicPower + other.skillRange;
+        printComparingResult(this.name, other.name, "маг в Хогварсе");
+
+    }
+
+
+
+    private void printComparingResult(String bestStudent, String worseStudent,String parametr) {
+        System.out.println(bestStudent +
+                " лучшe "+ parametr+ " чем " + worseStudent);
+    }
+    public void compareStudent(int countThis,int countOther,String thisName,String other, String parametr){
+        if (countThis>countOther){
+            printComparingResult(thisName,other,parametr);
+        } else if (countThis < countOther) {
+            printComparingResult(other,thisName,parametr);
+        }else {
+            System.out.println("Студенты одинаково сильны ");
+        }
+    }
 }
+
