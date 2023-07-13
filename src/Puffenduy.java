@@ -12,7 +12,7 @@ public class Puffenduy extends Hogwarts {
 
 
     @Override
-    public String toString() {
+    public String toString()  {
         return super.toString() +
                 "Трудолюбие = " + industriousness +
                 ", верность = " + honesty +

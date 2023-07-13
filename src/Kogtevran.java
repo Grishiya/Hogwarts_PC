@@ -14,7 +14,7 @@ public class Kogtevran extends Hogwarts {
 
 
     @Override
-    public String toString() {
+    public String toString()  {
         return super.toString() +
                 "Ум = " + mind +
                 ", мудрость = " + wisdom +

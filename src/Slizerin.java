@@ -12,7 +12,7 @@ public class Slizerin extends Hogwarts {
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
-        this.resoursefulness = resoursefulness;
+        this.resoursefulness =  resoursefulness;
         this.domination = domination;
     }
 

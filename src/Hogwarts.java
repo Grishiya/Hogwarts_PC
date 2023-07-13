@@ -5,7 +5,7 @@ public abstract class Hogwarts {
     private final int skillRange;
 
     public Hogwarts(String name, String surname, int magicPower, int skillRange) {
-        this.name = name;
+        this.name =  name;
         this.surname = surname;
         this.magicPower = magicPower;
 
