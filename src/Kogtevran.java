@@ -9,12 +9,12 @@ public class Kogtevran extends Hogwarts {
         this.mind = mind;
         this.wisdom = wisdom;
         this.wit = wit;
-        this.creativity = creativity ;
+        this.creativity = creativity;
     }
 
 
     @Override
-    public String toString()  {
+    public String toString() {
         return super.toString() +
                 "Ум = " + mind +
                 ", мудрость = " + wisdom +
@@ -25,6 +25,6 @@ public class Kogtevran extends Hogwarts {
     public void compareTo(Kogtevran other) {
         int thisCount = this.mind + this.creativity + this.wit;
         int otherCount = other.mind + other.wit + other.creativity;
-        super.compareStudent(thisCount, otherCount, this.getName(), other.getName() , "Когтевранец");
+        super.compareStudent(thisCount, otherCount, this.getName(), other.getName(), "Когтевранец");
     }
 }

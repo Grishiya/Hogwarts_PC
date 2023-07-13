@@ -3,7 +3,7 @@ public class Slizerin extends Hogwarts {
     private final int determination;
     private final int ambition;
     private final int resoursefulness;
-    private final int  domination;
+    private final int domination;
 
     public Slizerin(String name, String surname, int magicPower,
                     int skillRange, int cunning, int determination,
@@ -12,7 +12,7 @@ public class Slizerin extends Hogwarts {
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
-        this.resoursefulness =  resoursefulness;
+        this.resoursefulness = resoursefulness;
         this.domination = domination;
     }
 
